@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --white:#f3f3f3;
+  --black:#111;
+  --blue:#3a80e9;
+  --grey:#888;
+  --darkgrey:#1b1b1b;
+  --green:#61c96f;
+  --red:#f94141;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection{
+  background-color: var(red);
+  color:var(--white);
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--white); 
+  rounded: 3rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue); 
+}
+.mobile-drawer{
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  
+  .links{
+    display: none;
+  }
+  .mobile-drawer{
+    display: block;
+  ;
+  }
+
+}
+.text-stroke {
+  -webkit-text-stroke: 1px white; /* Adjust stroke color and width as needed */
+  text-stroke: 2px var(--white)
+}
+
+.hover-transparent:hover {
+  background-color: transparent;
+}
+/* styles.css */
+@media (max-width: 800px) {
+  .flex-col-800 {
+    flex-direction: column;
+    padding: 20px; /* Adjust padding as needed */
+  }
+}
+.description-content a {
+  color: var(--blue);
+  text-decoration: underline;
+}
